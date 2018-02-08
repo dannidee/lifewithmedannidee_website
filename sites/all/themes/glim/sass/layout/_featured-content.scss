@@ -1,0 +1,105 @@
+#featured {
+	background-size: cover !important;
+	background-position: 50% 50% !important;
+	background-attachment: fixed !important;
+	padding: 75px 0 115px;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	#featured-overlay {
+		background: rgba($color__black, 0.32);
+		bottom: 0;
+		height: 100%;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 100%;
+	}
+	#featured-content {
+		margin-bottom: 73px;
+	}
+}
+#featured-slider {
+	.item {
+		background-color: $color__white;
+		@include prefixed(backface-visibility, hidden);
+	}
+	.item .post-thumb {
+		background-size: cover;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+	}
+	.item .post-content {
+		text-align: center;
+		padding: 0 30px 30px;
+	}
+	.item .post-content .devider {
+		padding: 0 10px;
+	}
+	.item .post-content .post-thumb img {
+		@include prefixed(backface-visibility, hidden);
+	}
+	.item .post-content .entry-title {
+		font-size: 18px;
+		line-height: em(30px);
+		margin-top: 28px;
+		margin-bottom: 20px;
+		position: relative;
+		z-index: 100;
+		overflow: hidden;
+		@include prefixed(backface-visibility, hidden);
+	}
+	.item .post-content .more-link-wrap {
+		position: relative;
+		margin-top: 25px;
+	}
+	.item .post-content .more-link-wrap:before {
+		border-bottom: 1px solid $color__border-two;
+		content: "";
+		left: 0;
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		@include prefixed(transform, translateY(-50%));
+	}
+	.item .post-content .more-link-wrap .more-link {
+		background: $color__white;
+		border: 1px solid $color__border-two;
+		border-radius: 5px;
+		letter-spacing: 1px;
+		line-height: normal;
+		padding: 10px 20px;
+		position: relative;
+		display: table;
+		margin: auto;
+		font-size: 9px;
+		@include prefixed(backface-visibility, hidden);
+		@include prefixed(transition, all 0.2s ease);
+	}
+	.item .post-content .more-link-wrap .more-link:hover {
+		color: $color__white;
+	}
+	.owl-controls .owl-nav div {
+		position: absolute;
+		top: 50%;
+		@include prefixed(transform, translateY(-50%));
+		@include prefixed(transition, color 0.25s ease);
+		background: $color__white;
+		line-height: normal;
+		padding: 30px 12px;
+		font-size: 25px;
+	}
+	.owl-controls .owl-nav .owl-prev {
+		left: -60px;
+	}
+	.owl-controls .owl-nav .owl-next {
+		right: -60px;
+	}
+}
+.owl-carousel .owl-item img {
+	transform-style: inherit !important;
+}
+.owl-carousel .owl-item {
+	transform-style: inherit !important;
+}

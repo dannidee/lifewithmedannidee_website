@@ -1,0 +1,64 @@
+.error-page {
+	.error-description {
+		text-align: center;
+	}
+	.error-search {
+		position: relative;
+		top: 88px;
+		width: 52%;
+		z-index: 20;
+	}
+
+	.error-image img {
+		margin: auto;
+		position: relative;
+		right: 0;
+		top: -60px;
+	}
+	
+	.search {
+		text-align: center;
+	}
+	.search-form {
+		width: 100% !important;
+		margin: auto;
+		margin-bottom: 1em;
+		.input-group {
+			.form-controller {
+				padding: 1em;
+				height: 45px;
+				background: $header__footer-bg;
+				border: 0 none;
+			}
+			button {
+				@include prefixed(border-radius, 0);
+				padding: 0;
+				position: relative;
+				background: $header__footer-bg;
+				color: $color__black;
+				border-left: 1px solid #e3e7e5;
+				width: 55px;
+				height: 45px;
+				text-align: center;
+			}
+		}
+	}
+	.goto-button {
+		display: block;
+	} 
+	.go-to {
+		margin: 0;
+		text-align: center;
+		overflow: hidden;
+		&:first-child {
+			margin-left: 0;
+			position: relative;
+			//left: -3px;
+		}
+		&:last-child {
+			margin-right: 0;
+			position: relative;
+			right: -15px;
+		}
+	}
+}

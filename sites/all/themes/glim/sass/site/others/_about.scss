@@ -1,0 +1,47 @@
+.about-me {
+	.author-details {
+		.small-border {
+			margin-left: 0;
+			width: 105px;
+		}
+	}
+	.author-name {
+		font-weight: bold;
+		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 35px;
+	}
+	.entry-content {
+		margin-bottom: 30px;
+	}
+	.entry-footer {
+		position: relative;
+		overflow: hidden;
+		.follow-link {
+			float: left;
+			position: relative;
+			margin-top: 40px;
+			span {
+				margin-right: 10px;
+			}
+			a {
+				margin: 0 5px;
+			}
+		}
+		.author-sign {
+			float: right;
+			text-align: center;
+		}
+		.author-sign h3 {
+			margin-top: 0;
+			font-size: 16px;
+		}
+	}
+
+	.author-image {
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}	
+}

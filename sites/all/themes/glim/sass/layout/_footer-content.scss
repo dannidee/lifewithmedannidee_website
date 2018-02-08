@@ -1,0 +1,197 @@
+/*--------------------------------------------------------------
+# Footer Top
+--------------------------------------------------------------*/
+#footer-top {
+	text-align: center;
+	background: $color__white;
+	.widget {
+		background: transparent;
+		border: 0;
+		margin: 0 !important;
+		padding: 0;
+		.widget-title-area {
+			margin-bottom: 0.2em;
+			overflow: hidden;
+		}
+		.widget-title {
+			background: transparent;
+		   	font-weight: bold;
+		    margin: 20px 0;
+			padding: 0;
+			&:before, &:after {
+				background: $color__border-four;
+				content: "";
+				height: 1px;
+				margin-top: -1px;
+				position: absolute;
+				top: 50%;
+			}
+			span {
+				background: $color__white;
+				position: relative;
+				top: -2px;
+				z-index: 10;
+				&:before, &:after {
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					font-size: 15px;
+					margin-top: 1px;
+				}
+				&:before {
+					margin-right: 10px;
+					content: "\e603";
+					font-family: 'glimmer';
+					left: -30%;
+				}
+				&:after {
+					margin-left: 10px;
+					content: "\e600";
+					font-family: 'glimmer';
+					right: -30%;
+				}
+			}
+		}
+	}
+	.jr-insta-thumb {
+		background: $color__white;
+		img {
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+	}
+}
+#footer-top #instafeed {
+	margin-top: 10px;
+	margin-bottom: 35px;
+}
+#footer-top #instafeed .list {
+    display: inline-block;
+    width: 16.66%;
+}
+/*--------------------------------------------------------------
+# Footer Middle
+--------------------------------------------------------------*/
+#footer-middle {
+	padding: 56px 0;
+	background: $header__footer-bg;
+	.widget {
+		background: transparent;
+		border: none;
+		padding-top: 0;
+		padding-bottom: 0;
+		margin-bottom: 0;
+		.widget-title {
+			text-align: left;
+			padding: 0;
+			font-weight: 700;
+			background: transparent;
+
+			&:before {
+				background: transparent;
+			}
+
+			> span {
+				background: transparent;
+				padding: 0;
+			}
+		}
+		.widget-title:before,
+		.widget-title:after {
+			content: "";
+		}
+	}
+	ul li {
+		border-color: $color__border-five;
+	}
+	table,
+	td, 
+	th, 
+	td {
+		border-color: $color__border-five;
+	}
+	.widget .widget-title::before, 
+	.widget .widget-title::after {
+		border-color: $color__border-five; 
+	}
+	.widget_tag_cloud .tagcloud a {
+		border-color: $color__border-five;
+		color: $color__footer;
+		&:hover {
+			color: $color__white;
+		}
+	}
+	.follow-us-area .follow-link .fa {
+		border-color: $color__border-five;
+	}
+	.widget_categories ul li, 
+	.widget_archive ul li {
+		color: $color__footer;
+	}
+	.widget_categories ul li .count, 
+	.widget_archive ul li .count {
+		background: transparent;
+		border: 1px solid $color__border-five;
+	}
+	.form-controller {
+		border-color: $color__border-five;
+		background: transparent;
+	} 
+}
+
+/*--------------------------------------------------------------
+# Footer Bottom
+--------------------------------------------------------------*/
+#footer-bottom {
+	color: $color__footer;
+	font-size: 12px;
+    padding: 12px 0;
+    text-align: center;
+    letter-spacing: 0.1em;
+	.copyright {
+		p {
+			margin-bottom: 0;
+			word-spacing: 0.05em;
+		}
+		a {
+			color: inherit;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+	}
+	.footer-social {
+		margin-top: 12px;
+		> a {
+			padding: 0 8px;
+		}
+	}
+}
+/*--------------------------------------------------------------
+# Scroll Top
+--------------------------------------------------------------*/
+.topbutton {
+	background: $color__white;
+	border: 1px solid;
+	bottom: 50px;
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	position: fixed;
+	right: 20px;
+	text-align: center;
+	width: 40px;
+	@include prefixed(border-radius, 50px);
+	@include prefixed(transition, all .3s);
+}
+
+.btn-show {
+    opacity: 1;
+    @include prefixed(transform, translateY(0));
+}
+
+.btn-hide {
+    opacity: 0;
+     @include prefixed(transform, translateY(40px));
+}

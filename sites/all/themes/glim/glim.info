@@ -1,0 +1,46 @@
+;Theme info
+name = Glim
+description = Glim ready for use Industries, School, hospital, corporative, travel, fashion, jewellery and any business.
+package = Core
+version = VERSION
+core = 7.x
+screenshot = 'screenshot.png'
+
+
+; Add a style sheet
+
+
+; Add a script
+
+
+
+;Core regions
+regions[header_top] = 'Header Top'
+regions[main_menu] = 'Main Menu'
+regions[main_menu_2] = 'Main Menu 2'
+regions[top_content] = 'Top Content'
+regions[content] = 'Main Content'
+regions[section_content] = 'Section Content'
+regions[sidebar] = 'Sidebar'
+regions[sidebar_homepage] = 'Sidebar Homepage'
+regions[bot_content] = 'Bot Content'
+regions[footer_top] = 'Footer Top'
+regions[footer_middle] = 'Footer Middle'
+
+
+
+;Features (core settings)
+features[] = 'logo'
+features[] = 'name'
+features[] = 'node_user_picture'
+features[] = 'comment_user_picture'
+features[] = 'comment_user_verification'
+
+;Breadcrumb
+settings[breadcrumb_display] = 'yes'
+settings[breadcrumb_separator] = ' &#187; '
+settings[breadcrumb_home] = 1
+
+version = "7.x"
+project = "Glim"
+datestamp = "1365027012"
